@@ -1,0 +1,29 @@
+.svg {
+    // width: 5em;
+    // height: 5em;
+    // transform: rotate(-90deg);
+    position: relative;
+    fill: var(--green-300);
+
+    circle {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .circle {
+        fill: transparent;
+        stroke: var(--grey-400);
+        stroke-width: .5em;
+    }
+
+    .progress {
+        fill: transparent;
+        stroke: var(--green-700);
+        stroke-linecap: round;
+        stroke-width: .5em;
+    }
+
+    .text {
+        fill: var(--green-700);
+        font-size: 1.3em;
+    }
+}

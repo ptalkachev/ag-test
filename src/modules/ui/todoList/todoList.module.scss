@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5em;
+    width: 100%;
+
+    &.loading {
+        opacity: .7;
+        pointer-events: none;
+    }
+}

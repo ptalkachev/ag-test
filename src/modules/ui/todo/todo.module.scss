@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1em;
+    width: 100%;
+    padding: 0.5em;
+    background-color: var(--grey-400);
+    border-radius: .4em;
+    transition: opacity .3s;
+    
+
+    svg {
+        cursor: pointer;
+    }
+
+    .status {
+        opacity: 0;
+        transition: opacity .3s;
+        
+        &.completed {
+            opacity: 1;
+        }
+
+        &:not(.completed):hover {
+            opacity: .5;
+        }
+    }
+
+    .editInput {
+        flex: 1;
+        width: 100%;
+    }
+
+    .task {
+        text-align: left;
+        flex: 1;
+        cursor: default;
+
+        &.completed {
+            text-decoration: line-through;
+        }
+    }
+
+    .edit {
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    &.loading {
+        opacity: .8;
+        pointer-events: none;
+    }
+
+    &:hover {
+        .edit {
+            opacity: 1;
+        }
+    }
+}

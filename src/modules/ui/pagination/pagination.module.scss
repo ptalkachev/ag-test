@@ -1,0 +1,15 @@
+.container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: .2em;
+    padding: .5em;
+    overflow: hidden;
+
+    .available {
+        background-color: var(--grey-300);
+        color: var(--black);
+        border: 1px solid var(--green-900);
+    }
+}
+
